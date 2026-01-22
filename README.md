@@ -15,7 +15,7 @@
 
 The dataset contains patient health-related attributes:
 
-- Feature	Description
+- Feature	Description 
 - Age	 of the patient
 - Sex	Gender (1 = Male, 0 = Female)
 - Chol	Serum cholesterol level
@@ -24,43 +24,66 @@ The dataset contains patient health-related attributes:
 ## Step-by-Step Implementation
 
 - 1: Load Dataset
-- The heart disease dataset is loaded into a Pandas DataFrame for analysis and preprocessing.
+  
+ The heart disease dataset is loaded into a Pandas DataFrame for analysis and preprocessing.
 
 - 2: Split Dataset into Training and Testing Sets
-- The dataset is divided using train_test_split():
-- Training Data → 70%
-- Testing Data → 30%
-- This prevents overfitting and ensures fair evaluation.
+  
+ The dataset is divided using train_test_split():
+ 
+ Training Data → 70%
+ 
+ Testing Data → 30%
+ 
+ This prevents overfitting and ensures fair evaluation.
 
 - 3: Train Logistic Regression Model
-- A Logistic Regression classifier is trained using Scikit-learn.
-- Suitable for binary classification problems
-- Efficient for medical prediction tasks
-- The max_iter parameter is increased to ensure model convergence.
+  
+ A Logistic Regression classifier is trained using Scikit-learn.
+ 
+ Suitable for binary classification problems
+ 
+ Efficient for medical prediction tasks
+ 
+ The max_iter parameter is increased to ensure model convergence.
 
 - 4: Predict on Test Data
-- The trained model is used to make predictions on test data.
-- To evaluate model accuracy
+  
+ The trained model is used to make predictions on test data.
+ 
+ To evaluate model accuracy
 
 - 5: Model Evaluation Metrics
-- The following performance metrics are calculated:
-- Accuracy
-- Precision
-- Recall
+  
+ The following performance metrics are calculated:
+ 
+ Accuracy
+ 
+ Precision
+ 
+ Recall
 
 - 6: Confusion Matrix
-- A confusion matrix is generated to visualize prediction results:
-- Actual / Predicted	No Disease	Disease
-- True Negative	Correct No Disease Prediction	
-- False Positive	Incorrect Disease Prediction	
-- False Negative	Missed Disease Case	
-- True Positive	Correct Disease Prediction	
+
+ A confusion matrix is generated to visualize prediction results:
+ 
+ Actual / Predicted	No Disease	Disease
+ 
+ True Negative	Correct No Disease Prediction	
+ 
+ False Positive	Incorrect Disease Prediction	
+ 
+ False Negative	Missed Disease Case	
+ 
+ True Positive	Correct Disease Prediction	
 
 - 7: Save Trained Model
-- The trained Logistic Regression model is saved.
+  
+ The trained Logistic Regression model is saved.
 
 - 8: Generate Evaluation Report
-- Model performance metrics and confusion matrix results are saved.
+- 
+ Model performance metrics and confusion matrix results are saved.
 
 ## Conclusion
 
